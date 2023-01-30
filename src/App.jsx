@@ -13,7 +13,7 @@ import Profile from './Components/Profile/Profile';
 import { useEffect } from 'react';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import ItemDetails from './Components/ItemDetails/ItemDetails';
-import { Offline, Online } from 'react-detect-offline';
+import { Offline } from 'react-detect-offline';
 
 
 
@@ -46,6 +46,7 @@ function App() {
       {path:'register' , element:<Register/>},
       
     ]}
+    
   ])
   return<>
   <div>
