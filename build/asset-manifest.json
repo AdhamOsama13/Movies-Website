@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/moviesandtvwebsite/static/css/main.3faf57e9.css",
-    "main.js": "/moviesandtvwebsite/static/js/main.ff3a51cb.js",
-    "static/js/787.5174d298.chunk.js": "/moviesandtvwebsite/static/js/787.5174d298.chunk.js",
-    "static/media/fa-solid-900.ttf": "/moviesandtvwebsite/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
-    "static/media/fa-brands-400.ttf": "/moviesandtvwebsite/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
-    "static/media/fa-solid-900.woff2": "/moviesandtvwebsite/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
-    "static/media/fa-brands-400.woff2": "/moviesandtvwebsite/static/media/fa-brands-400.3ac6859b28be946745f9.woff2",
-    "static/media/fa-regular-400.ttf": "/moviesandtvwebsite/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
-    "static/media/fa-regular-400.woff2": "/moviesandtvwebsite/static/media/fa-regular-400.1f3772178d9e5bed38a6.woff2",
-    "static/media/fa-v4compatibility.ttf": "/moviesandtvwebsite/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
-    "static/media/fa-v4compatibility.woff2": "/moviesandtvwebsite/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
-    "index.html": "/moviesandtvwebsite/index.html",
-    "main.3faf57e9.css.map": "/moviesandtvwebsite/static/css/main.3faf57e9.css.map",
-    "main.ff3a51cb.js.map": "/moviesandtvwebsite/static/js/main.ff3a51cb.js.map",
-    "787.5174d298.chunk.js.map": "/moviesandtvwebsite/static/js/787.5174d298.chunk.js.map"
+    "main.css": "/static/css/main.bf36937e.css",
+    "main.js": "/static/js/main.28796a3a.js",
+    "static/js/787.5174d298.chunk.js": "/static/js/787.5174d298.chunk.js",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.3ac6859b28be946745f9.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.1f3772178d9e5bed38a6.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
+    "index.html": "/index.html",
+    "main.bf36937e.css.map": "/static/css/main.bf36937e.css.map",
+    "main.28796a3a.js.map": "/static/js/main.28796a3a.js.map",
+    "787.5174d298.chunk.js.map": "/static/js/787.5174d298.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3faf57e9.css",
-    "static/js/main.ff3a51cb.js"
+    "static/css/main.bf36937e.css",
+    "static/js/main.28796a3a.js"
   ]
 }
