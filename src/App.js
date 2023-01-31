@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home'
 import Movies from './Components/Movies/Movies'
@@ -34,26 +34,39 @@ function App() {
     
   }
 
-  let routers= createBrowserRouter([
-    {path:'/' , element:<Layout setuserData={setuserData} userData={userData}/>,children:[
+  // let routers= createBrowserRouter([
+  //   {path:'/' , element:<Layout setuserData={setuserData} userData={userData}/>,children:[
     
-      {index:true , element: <ProtectedRoute userData={userData}><Home/></ProtectedRoute>},
-      {path:'movies' , element:<ProtectedRoute userData={userData}><Movies/></ProtectedRoute>},
-      {path:'people' , element: <ProtectedRoute userData={userData}><People/></ProtectedRoute>},
-      {path:'profile' , element:<ProtectedRoute userData={userData}><Profile userData={userData}/></ProtectedRoute>},
-      {path:'tv' , element: <ProtectedRoute userData={userData}><TV/></ProtectedRoute>},
-      {path:'itemdetails/:id/:media_type' , element: <ProtectedRoute userData={userData}><ItemDetails/></ProtectedRoute>},
-      {path:'login' , element:<Login saveUserData={saveUserData}/>},
-      {path:'register' , element:<Register/>},
+  //     {index:true , element: <ProtectedRoute userData={userData}><Home/></ProtectedRoute>},
+  //     {path:'movies' , element:<ProtectedRoute userData={userData}><Movies/></ProtectedRoute>},
+  //     {path:'people' , element: <ProtectedRoute userData={userData}><People/></ProtectedRoute>},
+  //     {path:'profile' , element:<ProtectedRoute userData={userData}><Profile userData={userData}/></ProtectedRoute>},
+  //     {path:'tv' , element: <ProtectedRoute userData={userData}><TV/></ProtectedRoute>},
+  //     {path:'itemdetails/:id/:media_type' , element: <ProtectedRoute userData={userData}><ItemDetails/></ProtectedRoute>},
+  //     {path:'login' , element:<Login saveUserData={saveUserData}/>},
+  //     {path:'register' , element:<Register/>},
       
-    ]}
+  //   ]}
     
-  ])
+  // ])
   return<>
   <div>
+    <BrowserRouter>
+    <Routes>
+      <Route  exact path='/' element={<Layout/>}/>
+      <Route   path='/home' element={<Home/>}/>
+      <Route   path='/movies' element={<Movies/>}/>
+      <Route   path='/people' element={<People/>}/>
+      <Route   path='/tv' element={<TV/>}/>
+      <Route   path='/itemdetails/:id/:media_type' element={<ItemDetails/>}/>
+      <Route   path='login' element={<Login/>}/>
+      <Route   path='profile' element={<Profile/>}/>
+      <Route   path='register' element={<Register/>}/>
+    </Routes>
+    </BrowserRouter>
     <Offline><div className='offline'>You are Offline!</div></Offline>
   </div>
-   <RouterProvider router={routers}/>
+   {/* <RouterProvider router={routers}/> */}
    </>
 }
 
