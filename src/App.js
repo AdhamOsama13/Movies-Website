@@ -54,7 +54,7 @@ function App() {
   <div>
     <Offline><div className='offline'>You are Offline!</div></Offline>
   </div>
-  <HashRouter  router={routers}></HashRouter>
+  <HashRouter basename="/" router={routers}></HashRouter>
    {/* <RouterProvider/> */}
    </>
 }
