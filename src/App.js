@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, HashRouter } from 'react-router-dom';
 import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home'
 import Movies from './Components/Movies/Movies'
@@ -54,7 +54,8 @@ function App() {
   <div>
     <Offline><div className='offline'>You are Offline!</div></Offline>
   </div>
-   <RouterProvider router={routers}/>
+  <HashRouter  router={routers}></HashRouter>
+   {/* <RouterProvider/> */}
    </>
 }
 
