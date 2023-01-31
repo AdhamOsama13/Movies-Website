@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider, HashRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-router-dom';
 import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home'
 import Movies from './Components/Movies/Movies'
@@ -35,7 +35,7 @@ function App() {
     
   }
 
-  let routers= createBrowserRouter([
+  let routers= createHashRouter([
     {path:'/' , element:<Layout setuserData={setuserData} userData={userData}/>,errorElement:<notFound/>,children:[
     
       {index:true , element: <ProtectedRoute userData={userData}><Home/></ProtectedRoute>},
@@ -54,8 +54,7 @@ function App() {
   <div>
     <Offline><div className='offline'>You are Offline!</div></Offline>
   </div>
-  <HashRouter basename="/" router={routers}></HashRouter>
-   {/* <RouterProvider/> */}
+   <RouterProvider router={routers}/>
    </>
 }
 
