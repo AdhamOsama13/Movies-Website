@@ -6,7 +6,7 @@ export default function Navbar({userData , logOut}) {
   return ( <nav className='p-2 d-flex justify-content-between flex-md-row flex-column'>
     <div className="left-nav flex-md-row flex-column d-flex align-items-center">
 
-      <h1 className='m-0 pe-3'>Noxe</h1>
+      <h1 className='m-0 pe-3'> <Link to='/'>Noxe</Link></h1>
 {userData?<ul className="list-unstyled d-flex m-0 align-items-center flex-md-row flex-column">
         <li className='px-2'> <Link to='/'>Home</Link>  </li>
         <li className='px-2'> <Link to='movies'>Movies</Link>  </li>
@@ -19,11 +19,11 @@ export default function Navbar({userData , logOut}) {
     <div className="right-nav d-flex flex-md-row flex-column  align-items-center">
 
     <div className="social-media">
-      <i className='fab fa-facebook mx-1'></i>
-      <i className='fab fa-instagram mx-1'></i>
-      <i className='fab fa-twitter mx-1'></i>
-      <i className='fab fa-spotify mx-1'></i>
-      <i className='fab fa-youtube mx-1'></i>
+    <a href={"https://www.facebook.com/"} target="_blank"> <i className='fab fa-facebook mx-1'></i></a>
+    <a href={"https://www.instagram.com/"} target="_blank"> <i className='fab fa-instagram mx-1'></i></a>
+    <a href={"https://www.twitter.com/"} target="_blank"> <i className='fab fa-twitter mx-1'></i></a>
+    <a href={"https://www.spotify.com/"} target="_blank"><i className='fab fa-spotify mx-1'></i></a>
+    <a href={"https://www.youtube.com/"} target="_blank">  <i className='fab fa-youtube mx-1'></i></a>
     </div>
 
       <ul className="list-unstyled flex-md-row flex-column d-flex m-0 align-items-center">
