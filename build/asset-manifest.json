@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/moviesandtvwebsite/static/css/main.3faf57e9.css",
-    "main.js": "/moviesandtvwebsite/static/js/main.c1512594.js",
-    "static/js/787.5174d298.chunk.js": "/moviesandtvwebsite/static/js/787.5174d298.chunk.js",
+    "main.js": "/moviesandtvwebsite/static/js/main.f9f7e5e1.js",
+    "static/js/787.f37bed80.chunk.js": "/moviesandtvwebsite/static/js/787.f37bed80.chunk.js",
     "static/media/fa-solid-900.ttf": "/moviesandtvwebsite/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
     "static/media/fa-brands-400.ttf": "/moviesandtvwebsite/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
     "static/media/fa-solid-900.woff2": "/moviesandtvwebsite/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/moviesandtvwebsite/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
     "index.html": "/moviesandtvwebsite/index.html",
     "main.3faf57e9.css.map": "/moviesandtvwebsite/static/css/main.3faf57e9.css.map",
-    "main.c1512594.js.map": "/moviesandtvwebsite/static/js/main.c1512594.js.map",
-    "787.5174d298.chunk.js.map": "/moviesandtvwebsite/static/js/787.5174d298.chunk.js.map"
+    "main.f9f7e5e1.js.map": "/moviesandtvwebsite/static/js/main.f9f7e5e1.js.map",
+    "787.f37bed80.chunk.js.map": "/moviesandtvwebsite/static/js/787.f37bed80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3faf57e9.css",
-    "static/js/main.c1512594.js"
+    "static/js/main.f9f7e5e1.js"
   ]
 }
