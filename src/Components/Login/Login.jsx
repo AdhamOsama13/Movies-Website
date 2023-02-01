@@ -18,12 +18,12 @@ function getUserData(eventInfo) {
   let myUser={...user}
   myUser[eventInfo.target.name]=eventInfo.target.value;
   setUser(myUser);
-  console.log(myUser)
+
 }
 
 async function sendloginDataToApi() {
  let {data}=await axios.post(`https://route-movies-api.vercel.app/signin`, user);
- console.log(data.message)
+
  if (data.message == 'success') {
   setisLoading(false)
   localStorage.setItem('userToken', data.token)

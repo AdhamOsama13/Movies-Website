@@ -20,12 +20,12 @@ function getUserData(eventInfo) {
   let myUser={...user}
   myUser[eventInfo.target.name]=eventInfo.target.value;
   setUser(myUser);
-  console.log(myUser)
+
 }
 
 async function sendRegisterDataToApi() {
  let {data}=await axios.post(`https://route-movies-api.vercel.app/signup`, user);
- console.log(data.message)
+
  if (data.message == 'success') {
   setisLoading(false)
   navigate('/login');

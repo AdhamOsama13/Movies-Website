@@ -39,7 +39,7 @@ export default function ItemDetails() {
   <h6 className='py-2'> Popularity: {itemDetails.popularity && <span className=" p-2 text-muted ">{itemDetails.popularity?.toFixed(3)}</span>}</h6>
   <h6 className='py-2'> Known for: {itemDetails.known_for_department && <span className=" p-2 text-muted ">{itemDetails.known_for_department}</span>}</h6>
   {itemDetails.release_date?  <h6 className='py-2'> Release Date: {itemDetails.release_date && <span className=" p-2 text-muted ">{itemDetails.release_date}</span>}</h6>:''}
-  {itemDetails.biography?  <h6 className='py-2'> Biography: {itemDetails.biography && <span className=" p-2 text-muted ">{itemDetails.biography.slice(5)}</span>}</h6>:''}
+  {itemDetails.biography?  <h6 className='py-2'> Biography: {itemDetails.biography && <span className=" p-2 text-muted ">{itemDetails.biography}</span>}</h6>:''}
   <p className='py-2 tex    t-muted'>{itemDetails.overview}</p>
     </div>
 
