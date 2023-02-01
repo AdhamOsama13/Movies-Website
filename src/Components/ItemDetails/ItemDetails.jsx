@@ -20,7 +20,7 @@ export default function ItemDetails() {
   return <>
      <Helmet>
                 <meta charSet="utf-8" />
-                <title>{itemDetails.title}</title>
+             {itemDetails.title?<title>{itemDetails.title}</title>:<title>{itemDetails.name}</title>}   
                 
             </Helmet>
     <div className="row">

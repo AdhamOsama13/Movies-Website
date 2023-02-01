@@ -14,7 +14,7 @@ import { useEffect } from 'react';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import ItemDetails from './Components/ItemDetails/ItemDetails';
 import { Offline } from 'react-detect-offline';
-import notFound from './Components/notFound/notFound';
+
 
 
 
@@ -36,7 +36,7 @@ function App() {
   }
 
   let routers= createHashRouter([
-    {path:'/' , element:<Layout setuserData={setuserData} userData={userData}/>,errorElement:<notFound/>,children:[
+    {path:'/' , element:<Layout setuserData={setuserData} userData={userData}/>,children:[
     
       {index:true , element: <ProtectedRoute userData={userData}><Home/></ProtectedRoute>},
       {path:'movies' , element:<ProtectedRoute userData={userData}><Movies/></ProtectedRoute>},
