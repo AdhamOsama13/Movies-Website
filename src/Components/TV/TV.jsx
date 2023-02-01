@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState,useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 import MediaItem from '../MediaItem/MediaItem'
 
 export default function TV() {
@@ -14,7 +15,11 @@ export default function TV() {
       getTrending(setTrendingTv)
   
   } , [])
-  return (
+  return <>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>TV Series</title>
+            </Helmet>
     <div className="row py-5">
       <div className="col-md-4 d-flex align-items-center">
         <div>
@@ -27,4 +32,4 @@ export default function TV() {
       </div>
    {trendingTv.map((item , index)=> <MediaItem key={index} item={item}/>)}
     </div>
-  )}
+    </>}

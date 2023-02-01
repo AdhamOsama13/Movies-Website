@@ -1,12 +1,13 @@
 import axios from 'axios'
 import React, { useState,useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 import MediaItem from '../MediaItem/MediaItem'
 
 export default function Movies() {
   const [trendingMovies, setTrendingMovies] = useState([])
   async function getTrending(callback){
 
-    let {data}= await axios.get(`https://api.themoviedb.org/3/trending/movie/week?api_key=aa15a4edd81fdb1bc0dd3822b4f36c7e`)
+    let {data}= await axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=aa15a4edd81fdb1bc0dd3822b4f36c7e`)
     callback(data.results);
   
     }
@@ -14,7 +15,11 @@ export default function Movies() {
       getTrending(setTrendingMovies)
   
   } , [])
-  return (
+  return <>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Movies</title>
+            </Helmet>
     <div className="row py-5">
       <div className="col-md-4 d-flex align-items-center">
         <div>
@@ -27,5 +32,5 @@ export default function Movies() {
       </div>
    {trendingMovies.map((item , index)=> <MediaItem key={index} item={item}/>)}
     </div>
-  )
+    </>
 }
